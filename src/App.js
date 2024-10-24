@@ -1,4 +1,4 @@
-import QuestionCards from './components/QuestionCards';
+import QuestionCards from './QuestionCards';
 
 function App() {
   return (
