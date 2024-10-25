@@ -1,9 +1,9 @@
 import React from 'react';
-import QuestionCards from './QuestionCards';
+import QuestionCards from './components/QuestionCards';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <QuestionCards />
     </div>
   );
