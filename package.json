@@ -1,6 +1,7 @@
 {
   "name": "question-cards",
-  "version": "1.0.0",
+  "homepage": "https://oladeayo.github.io/question-cards",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "framer-motion": "^11.11.9",
@@ -10,16 +11,20 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "homepage": "https://oladeayo.github.io/question-cards",
+
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
   },
   "browserslist": {
     "production": [

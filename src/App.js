@@ -1,8 +1,11 @@
+import React from 'react';
 import QuestionCards from './QuestionCards';
 
 function App() {
   return (
-    <QuestionCards />
+    <div className="App">
+      <QuestionCards />
+    </div>
   );
 }
 
