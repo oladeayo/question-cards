@@ -18,14 +18,14 @@ const QuestionCards = () => {
     "Do not come any closer. Take off your sandals, for the place where you are standing is holy ground.",
     "If I perish, I perish.",
     "The Lord gave, and the Lord has taken away; may the name of the Lord be praised.",
-    "Lord, if it’s you, tell me to come to you on the water.",
+    "Lord, if it's you, tell me to come to you on the water.",
     "Where is the one who is born king of the Jews? For we saw his star when it rose and have come to worship him.",
     "I need to be baptized by you, and yet you come to me?",
     "Lord, save us! We are about to die!",
     "By what authority are you doing these things, and who gave you this authority?",
     "Look, Lord, half of my possessions I now give to the poor, and if I have cheated anyone of anything, I am paying back four times as much!",
     "Permit these two sons of mine to sit, one at your right hand and one at your left, in your kingdom.",
-    "Thus says the LORD, the God of Israel, ‘Release my people so that they may hold a pilgrim feast to me in the dessert.",
+    "Thus says the LORD, the God of Israel, 'Release my people so that they may hold a pilgrim feast to me in the dessert.",
     "I have sinned, for I have disobeyed what the Lord commanded and what you said as well. For I was afraid of the army, and I followed their wishes.",
     "I called out to the Lord from my distress, and  he answered me; from the belly of Sheol I cried out for help, and you heard my prayer.",
     "Tell me what makes you so strong and how you can be subdued and humiliated.",
@@ -35,7 +35,6 @@ const QuestionCards = () => {
     "How can a man be born when he is old? Can he enter a second time into his mother's womb and be born?",
     "Oh that thou wouldest bless me indeed, and enlarge my coast, and that thine hand might be with me, and that thou wouldest keep me from evil, that it might not grieve me!",
     "What! Could you not watch with Me one hour? Watch and pray, lest you enter into temptation. The spirit indeed is willing, but the flesh is weak."
-
   ];
 
   useEffect(() => {
@@ -124,7 +123,7 @@ const QuestionCards = () => {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md relative">
         <div 
-          className="relative h-64"
+          className="relative h-72"
           onTouchStart={onTouchStart}
           onTouchMove={onTouchMove}
           onTouchEnd={onTouchEnd}
@@ -139,8 +138,19 @@ const QuestionCards = () => {
               exit="exit"
               className="absolute w-full"
             >
-              <div className="w-full h-64 bg-white rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <div className="w-full h-72 bg-white rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
                 <div className="p-6 h-full flex flex-col items-center justify-center bg-gradient-to-br from-white to-blue-50 rounded-xl">
+                  {/* Headers */}
+                  <div className="mb-4 text-center">
+                    <h2 className="text-lg font-semibold text-gray-700 mb-1">
+                      Who said this, to whom in the Bible?
+                    </h2>
+                    <p className="text-sm text-blue-600 italic">
+                      Extra points for Scriptural Reference
+                    </p>
+                  </div>
+
+                  {/* Question text */}
                   <motion.p 
                     className="text-xl text-center font-medium text-gray-800"
                     initial={{ opacity: 0, y: 20 }}
